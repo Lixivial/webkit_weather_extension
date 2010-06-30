@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DefaultValue</key>
+		<string>95014</string>
+		<key>Key</key>
+		<string>zip</string>
+		<key>Password</key>
+		<false/>
+		<key>Secure</key>
+		<true/>
+		<key>Title</key>
+		<string>Zip Code</string>
+		<key>Type</key>
+		<string>TextField</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>wunder</string>
+		<key>Key</key>
+		<string>site</string>
+		<key>Title</key>
+		<string>Preferred Site</string>
+		<key>Titles</key>
+		<array>
+			<string>weather.com</string>
+			<string>wunderground.com</string>
+		</array>
+		<key>Type</key>
+		<string>ListBox</string>
+		<key>Values</key>
+		<array>
+			<string>weather</string>
+			<string>wunder</string>
+		</array>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<real>1</real>
+		<key>Key</key>
+		<string>refresh</string>
+		<key>MaximumValue</key>
+		<real>60</real>
+		<key>Title</key>
+		<string>Refresh Interval </string>
+		<key>Titles</key>
+		<array>
+			<string>1 minute</string>
+			<string>5 minutes</string>
+			<string>10 minutes</string>
+			<string>30 minutes</string>
+			<string>Manual</string>
+		</array>
+		<key>Type</key>
+		<string>ListBox</string>
+		<key>Values</key>
+		<array>
+			<real>1</real>
+			<real>5</real>
+			<real>10</real>
+			<real>30</real>
+			<real>-1</real>
+		</array>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>f</string>
+		<key>Key</key>
+		<string>unitOfMeasure</string>
+		<key>Title</key>
+		<string>Unit of Measure</string>
+		<key>Titles</key>
+		<array>
+			<string>Fahrenheit</string>
+			<string>Celsius</string>
+		</array>
+		<key>Type</key>
+		<string>RadioButtons</string>
+		<key>Values</key>
+		<array>
+			<string>f</string>
+			<string>c</string>
+		</array>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>http://api.wunderground.com/auto/wui/geo/GeoLookupXML/index.xml?query=%z%</string>
+		<key>Key</key>
+		<string>wunderURL</string>
+		<key>Secure</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>http://api.wunderground.com/auto/wui/geo/WXCurrentObXML/index.xml?query=%s%</string>
+		<key>Key</key>
+		<string>wunderSecondaryURL</string>
+		<key>Secure</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>http://api.wunderground.com/auto/wui/geo/ForecastXML/index.xml?query=%z%</string>
+		<key>Key</key>
+		<string>wunderForecastURL</string>
+		<key>Secure</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>http://www.wund.com/cgi-bin/findweather/getForecast?query=%z%</string>
+		<key>Key</key>
+		<string>wunderMoreInfoURL</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<real>REPLACE_WITH_YOUR_ID</real>
+		<key>Key</key>
+		<string>weatherPartnerID</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>REPLACE_WITH_YOUR_LICENSE_KEY</string>
+		<key>Key</key>
+		<string>weatherLicenseKey</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>http://xoap.weather.com/weather/local/%z%?cc=*&amp;%u%&amp;dayf=5&amp;link=xoap&amp;prod=xoap&amp;par=%p%&amp;key=%k%</string>
+		<key>Key</key>
+		<string>weatherURL</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>http://www.weather.com/weather/today/%z%</string>
+		<key>Key</key>
+		<string>weatherMoreInfoURL</string>
+	</dict>
+</array>
+</plist>

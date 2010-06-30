@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Jesse Pearson</string>
+	<key>CFBundleDisplayName</key>
+	<string>Weather</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.redonxi.weather</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Context Menu Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>com.redonxi.weather.contextualMenu</string>
+				<key>Identifier</key>
+				<string>com.redonxi.weather.ctx</string>
+				<key>Title</key>
+				<string>Weather</string>
+			</dict>
+		</array>
+		<key>Global Page</key>
+		<string>weather.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>com.redonxi.weather.getWeather</string>
+				<key>Identifier</key>
+				<string>com.redonxi.weather</string>
+				<key>Image</key>
+				<string>mostly_cloudy.png</string>
+				<key>Include By Default</key>
+				<false/>
+				<key>Label</key>
+				<string>Weather</string>
+				<key>Tool Tip</key>
+				<string>Weather for %z%</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>Start</key>
+			<array>
+				<string>weatherContextualMenu.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Weather button extension</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*.weather.com</string>
+				<string>*.wunderground.com</string>
+				<string>maps.google.com</string>
+			</array>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://www.redonxi.com/extensions/weather/manifest.plist</string>
+	<key>Website</key>
+	<string>http://www.redonxi.com</string>
+</dict>
+</plist>
