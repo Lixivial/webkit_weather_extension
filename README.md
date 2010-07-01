@@ -1,5 +1,9 @@
 # Weather.safariextz
 
+### Support
+
+You may email me at jesse.m.pearson _at_ gmail.com, or using [twitter](http://www.twitter.com/Lixivial). There is an issue tracker available on this github repo.
+
 ### Requirements
 
 1. Safari 5, Chrome 4 (not yet available)
@@ -28,12 +32,14 @@ Currently there are four settings:
 3. Refresh rate    -- the rate at which information is updated. If set to manual, clicking the toolbar button or right clicking a web page will be the only way to get present information.
 4. Unit of measure -- the unit in which to present temperatures.
 
-### Future features
-
-Some planned features are:
+### Planned features
 
 1. Determining the zip code from Safari and Chrome's built in geolocation features (when allowed)
 2. Allowing configuration of the tooltip and contextual menu information from a set of known fields
 3. Allowing options to display radar and/or forecast information in the contextual menu.
 4. More icons to better demonstrate more varied weather conditions
 5. Weather alerts to replace the temperature badge.
+
+### Acknowledgements 
+
+The icons are generated using [Jonathan Macagba's](http://www.lebigidea.com/) Weather wingdings font.</p>

@@ -37,13 +37,13 @@
 				<key>Identifier</key>
 				<string>com.redonxi.weather</string>
 				<key>Image</key>
-				<string>mostly_cloudy.png</string>
+				<string>default.png</string>
 				<key>Include By Default</key>
 				<false/>
 				<key>Label</key>
 				<string>Weather</string>
 				<key>Tool Tip</key>
-				<string>Weather for %z%</string>
+				<string>Click to update weather</string>
 			</dict>
 		</array>
 	</dict>

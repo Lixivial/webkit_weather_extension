@@ -115,7 +115,7 @@ function updateSettings(event) {
 				
 				XHR.open("GET", url, true);
 				XHR.send();
-			}, function(test) {
+			}, function() {
 				safari.extension.secureSettings.setItem("zip", "95014");
 			});
 		} else {
@@ -144,15 +144,11 @@ function updateSettings(event) {
 
 }
 
-function test(t) {
-	alert(t);
-}
-
 /* Button update listener */
 function getWeather(event) {
 	if (event.command === TOOLBAR_IDENTIFIER) {
 		var button = event.target;
-		button.image = safari.extension.baseURI + CONDITION_MAP[condition] + ".png";
+		button.image = safari.extension.baseURI + "conditions/" + CONDITION_MAP[condition] + ".png";
 		button.toolTip = tooltip;
 		button.badge = temperature;
 	}
@@ -290,7 +286,7 @@ function updateWeather() {
 
 				if (condition.indexOf("heavy") > -1 || condition.indexOf("light") > -1) {
 					condition = condition.split(" ")[1];
-				}				
+				}
 				
 				if (CONDITION_MAP[condition] === null || CONDITION_MAP[condition] === undefined) {
 					condition = "unknown";
@@ -300,7 +296,7 @@ function updateWeather() {
 				}
 
 				tooltip = time + " " + cityName + ": " + condition + ", " + 
-											temperature + "\u00B0" + unitOfMeasure + ", ";
+						  temperature + "\u00B0" + unitOfMeasure + ", ";
 				
 				if (heatIndex !== temperature) 
 					tooltip += "heat index: " + heatIndex + "\u00B0" + unitOfMeasure + ", ";
