@@ -340,7 +340,7 @@ function formatMoreInfoURL() {
 
 function getClearConditions(dateXML, moon, site) {
 	var sunsetTime, sunriseTime, forecastDate, currentDate, 
-	    sunsetDateString, sunriseDateString, result = null;
+		sunsetDateString, sunriseDateString, result = null;
 	if (site === "wunder") {
 		var simpleForecast = dateXML.getElementsByTagName("simpleforecast")[0];
 		sunsetTime         = dateXML.getElementsByTagName("sunset")[0].getElementsByTagName("hour")[0].firstChild.nodeValue
@@ -350,7 +350,7 @@ function getClearConditions(dateXML, moon, site) {
 		sunriseTime        = dateXML.getElementsByTagName("sunrise")[0].getElementsByTagName("hour")[0].firstChild.nodeValue
 						     + ":" + 
 						     dateXML.getElementsByTagName("sunrise")[0].getElementsByTagName("minute")[0].firstChild.nodeValue;
-		
+
 		forecastDateString = simpleForecast.getElementsByTagName("forecastday")[0].getElementsByTagName("month")[0].firstChild.nodeValue
 						     + "/" +
 						     simpleForecast.getElementsByTagName("forecastday")[0].getElementsByTagName("day")[0].firstChild.nodeValue
@@ -363,7 +363,7 @@ function getClearConditions(dateXML, moon, site) {
 		sunriseDateString  = forecastDateString + " " +
 							 sunriseTime;
 
-        sunsetDate  = new Date(sunsetDateString);
+		sunsetDate  = new Date(sunsetDateString);
 		sunriseDate = new Date(sunriseDateString);
 		
 		if (Date.parse(currentDate) > Date.parse(sunriseDate) && Date.parse(currentDate) < Date.parse(sunsetDate)) {
@@ -388,7 +388,7 @@ function getClearConditions(dateXML, moon, site) {
 							   + currentDate.getFullYear() + " " +
 							   sunriseTime;
 
-        sunsetDate  = new Date(sunsetDateString);
+		sunsetDate  = new Date(sunsetDateString);
 		sunriseDate = new Date(sunriseDateString);
 		
 		if (Date.parse(currentDate) > Date.parse(sunriseDate) && Date.parse(currentDate) < Date.parse(sunsetDate)) {
@@ -405,7 +405,7 @@ function getClearConditions(dateXML, moon, site) {
 }
 
 function findNearestMoonPhase(percent) {
-    var diffs = [];
+	var diffs = [];
 	var keys  = [];
 	
 	// calculate closest moon phase.
