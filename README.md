@@ -27,8 +27,8 @@ these, you may mouse over the button, or right-click anywhere on a web page.
 
 Currently there are four settings:
 
-1. Zip code        -- the postal code of your present location.
-2. Site            -- which site to pull information from, this will have bearing in future releases.
+1. Location code   -- the code of your present location (international requires wunderground; this then is the airport code).
+2. Site            -- which site to pull information from, this will have bearing in future releases. Currently the only real bearing it has is for international use.
 3. Refresh rate    -- the rate at which information is updated. If set to manual, clicking the toolbar button or right clicking a web page will be the only way to get present information.
 4. Unit of measure -- the unit in which to present temperatures.
 
@@ -39,6 +39,7 @@ Currently there are four settings:
 3. Allowing options to display radar and/or forecast information in the contextual menu.
 4. More icons to better demonstrate more varied weather conditions
 5. Weather alerts to replace the temperature badge.
+6. Better international support and more sources.
 
 ### Acknowledgements 
 

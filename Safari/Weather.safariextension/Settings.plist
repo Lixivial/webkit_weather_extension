@@ -12,7 +12,7 @@
 		<key>Secure</key>
 		<true/>
 		<key>Title</key>
-		<string>Zip Code</string>
+		<string>Location Code</string>
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
@@ -26,7 +26,7 @@
 		<key>Titles</key>
 		<array>
 			<string>weather.com</string>
-			<string>wunderground.com</string>
+			<string>wunderground.com (international support)</string>
 		</array>
 		<key>Type</key>
 		<string>ListBox</string>
