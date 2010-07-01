@@ -116,7 +116,7 @@
 	</dict>
 	<dict>
 		<key>DefaultValue</key>
-		<real>REPLACE_WITH_YOUR_ID</real>
+		<string>REPLACE_WITH_YOUR_ID</string>
 		<key>Key</key>
 		<string>weatherPartnerID</string>
 	</dict>

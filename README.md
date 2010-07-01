@@ -8,6 +8,12 @@ You may email me at jesse.m.pearson _at_ gmail.com, or using [twitter](http://ww
 
 1. Safari 5, Chrome 4 (not yet available)
 
+### Source Code Usage
+
+To use the weather.com source with this tree, you must provide a weather.com license key and partner ID by
+signing up for weather.com's API yourself. Update Settings.plist with your information to allow weather.com 
+to actually work. Wunderground is the default choice, anyway.
+
 ### Installation
 
 Simply download the .safariextz from here, or http://www.redonxi.com/extensions/weather/Weather.safariextz and
