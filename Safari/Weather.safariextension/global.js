@@ -409,17 +409,17 @@ function findNearestMoonPhase(percent) {
 	var keys  = [];
 	
 	// calculate closest moon phase.
-    for( var i in MOON_PHASES)
+	for( var i in MOON_PHASES)
 		diffs[Math.abs(percent - i)] = i;
 	
 	// sort keys
-    for (k in diffs) {
-        if (diffs.hasOwnProperty(k)) {
-            keys.push(k);
-        }
-    }
+	for (k in diffs) {
+		if (diffs.hasOwnProperty(k)) {
+			keys.push(k);
+		}
+	}
 	
-    keys.sort(function (a, b){
+	keys.sort(function (a, b){
 		return (a - b);
 	});
 	
